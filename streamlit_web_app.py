@@ -42,11 +42,11 @@
         "!jupyter nbconvert --to script '/content/drive/MyDrive/amazon reviews/streamlit_web_app.ipynb'"
       ],
       "metadata": {
-        "id": "NMeckjs-uVmc",
-        "outputId": "5aa01142-644b-40c4-d0e6-729378e8306b",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "NMeckjs-uVmc",
+        "outputId": "5aa01142-644b-40c4-d0e6-729378e8306b"
       },
       "execution_count": 3,
       "outputs": [
