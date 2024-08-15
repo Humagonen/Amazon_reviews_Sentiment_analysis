@@ -6,7 +6,6 @@
       "provenance": [],
       "mount_file_id": "https://github.com/Humagonen/Amazon_reviews_Sentiment_analysis/blob/main/streamlit_web_app.ipynb",
       "authorship_tag": "ABX9TyM8amc7V7J+uXQtDQj6xmPO",
-      "include_colab_link": true
     },
     "kernelspec": {
       "name": "python3",
