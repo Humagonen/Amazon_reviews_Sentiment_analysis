@@ -3,16 +3,6 @@
     {
       "cell_type": "markdown",
       "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/Humagonen/Amazon_reviews_Sentiment_analysis/blob/main/app.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
         "id": "CaQ-DGjVUsmm"
       },
       "source": [
@@ -194,7 +184,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 4,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -314,8 +304,7 @@
     "colab": {
       "provenance": [],
       "mount_file_id": "1iKkhOZMLjZKBJDhwXkdvI2RR-iPKFpTW",
-      "authorship_tag": "ABX9TyNfSAwvYczwOR4TrP3e6qEu",
-      "include_colab_link": true
+      "authorship_tag": "ABX9TyNfSAwvYczwOR4TrP3e6qEu"
     },
     "kernelspec": {
       "display_name": "Python 3",
