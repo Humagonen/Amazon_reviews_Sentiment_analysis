@@ -6,20 +6,26 @@ import pandas as pd
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import json
+import requests
 
 # Load the model
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('/content/drive/MyDrive/amazon reviews/review_amazon_sentiment5.h5')
+    return tf.keras.models.load_model('models/review_amazon_sentiment5.h5')
 
 model = load_model()
 
-# Load the tokenizer
-with open('/content/drive/MyDrive/amazon reviews/tokenizer.json', 'r') as f:
-    data = json.load(f)
+# load tokenizer from google drive
+def download_tokenizer():
+    url = "https://drive.google.com/file/d/1HDLiJr5UAmpTrpIhtCwofEy09jy0hwRZ/view?usp=drive_link"
+    response = requests.get(url)
+    with open('tokenizer.json', 'wb') as f:
+        f.write(response.content)
+    with open('tokenizer.json', 'r') as f:
+        tokenizer = json.load(f)
+    return tokenizer
 
-data_str = json.dumps(data)
-tokenizer = tokenizer_from_json(data_str)
+tokenizer = download_tokenizer()
 
 # Parameters
 num_words = 15000
