@@ -15,21 +15,12 @@ def load_model():
 
 model = load_model()
 
-# load tokenizer from google drive
-def download_tokenizer():
-    url = "https://drive.google.com/file/d/1HDLiJr5UAmpTrpIhtCwofEy09jy0hwRZ/view?usp=sharing"  # Replace FILE_ID with actual file ID
-    response = requests.get(url)
-    if response.status_code == 200:
-        with open('tokenizer.json', 'wb') as f:
-            f.write(response.content)
-        with open('tokenizer.json', 'r') as f:
-            tokenizer_json = f.read()
-        return tokenizer_json
-    else:
-        raise Exception(f"Failed to download file, status code: {response.status_code}")
+# Load the tokenizer
+with open('models/tokenizer.json', 'r') as f:
+    tokenizer = json.load(f)
 
-tokenizer_json_str = download_tokenizer()
-tokenizer = tokenizer_from_json(tokenizer_json_str)
+data_str = json.dumps(data)
+tokenizer = tokenizer_from_json(data_str)
 
 
 # Parameters
