@@ -2,7 +2,7 @@
 
 Streamlit app deployed from huggingface: https://huggingface.co/spaces/hgonen/amazon-reviews-sentiment-analyzer
 
----------------
+
 
 ## **1. Introduction**
 Sentiment analysis is a crucial task in natural language processing, involving the classification of text into positive or negative sentiment categories. This report outlines the process of developing a sentiment analysis model using Long Short-Term Memory (LSTM) networks and deploying it as a web application using Streamlit and Hugging Face Spaces.
