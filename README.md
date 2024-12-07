@@ -3,7 +3,6 @@
 Streamlit app deployed from huggingface: https://huggingface.co/spaces/hgonen/amazon-reviews-sentiment-analyzer
 
 
-
 ## **1. Introduction**
 Sentiment analysis is a crucial task in natural language processing, involving the classification of text into positive or negative sentiment categories. This report outlines the process of developing a sentiment analysis model using Long Short-Term Memory (LSTM) networks and deploying it as a web application using Streamlit and Hugging Face Spaces.
 
@@ -11,6 +10,8 @@ Sentiment analysis is a crucial task in natural language processing, involving t
 
 ### **2.1 Source of Data**
 The data used in this project was sourced from Kaggle, specifically from a dataset containing Amazon customer reviews. The dataset was provided in a compressed `bz2` format, which was converted to CSV for easier processing and analysis.
+
+Data Link: https://www.kaggle.com/datasets/bittlingmayer/amazonreviews
 
 ### **2.2 Data Description**
 The dataset consisted of approximately **3.6 million** entries and contained two columns:
